@@ -3,21 +3,26 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sanno Ma Tea — matcha &amp; tea cafe</title>
-  <meta name="description" content="Sanno Ma Tea — a neighborhood matcha and tea cafe. [Replace with your one-line description.]">
+  <title>San·No·Ma Tea — matcha &amp; tea cafe</title>
+  <meta name="description" content="San·No·Ma Tea — a neighborhood matcha and tea cafe. [Replace with your one-line description.]">
+  <meta name="theme-color" content="#141414">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&text=%E4%B8%89%E3%81%AE%E9%96%93%E8%8C%B6&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/brand/favicon.png">
+  <link rel="apple-touch-icon" href="images/brand/apple-touch-icon.png">
   <link rel="stylesheet" href="styles.css">
+  <script>try{if(localStorage.getItem("theme")==="dark")document.documentElement.dataset.theme="dark"}catch(e){}</script>
 </head>
-<body>
+<body class="home">
   <a class="skip-link" href="#main">Skip to content</a>
 
   <div class="announce">now open! come say hi — <a href="#visit">hours &amp; location</a></div>
 
   <header class="site-header">
     <div class="wrap">
-      <a class="logo" href="index.html">sanno<span>·</span>ma<span>·</span>tea</a>
+      <a class="logo" href="index.html"><img class="logo-mark" src="images/brand/logo-mark-light.png" alt="" width="44" height="44"><span class="logo-text">San<span>·</span>No<span>·</span>Ma Tea</span></a>
       <nav class="nav" aria-label="Main">
         <a href="#menu">menu</a>
         <a href="#about">about</a>
@@ -25,6 +30,10 @@
         <a href="hiring.html">join the team</a>
         <a href="#visit">visit</a>
       </nav>
+      <button class="theme-toggle" type="button" aria-label="Switch to night mode" title="Day / night">
+        <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg>
+        <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2M12 19.5v2M4.6 4.6l1.4 1.4M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4L6 18M18 6l1.4-1.4"/></svg>
+      </button>
       <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -35,7 +44,8 @@
     <!-- HERO -->
     <section class="hero hero-photo" style="background-image:linear-gradient(rgba(20,20,20,.55),rgba(20,20,20,.7)),url('images/web/dscf6889.jpg')">
       <div>
-        <h1>sanno <em>ma</em> tea</h1>
+        <h1>San·No·<em>Ma</em> Tea</h1>
+        <p class="hero-jp jp" lang="ja">三の間茶</p>
         <p>Slow down, sip something green. A cozy corner for matcha, tea, and good company in the heart of [Your City].</p>
         <div class="btn-row">
           <a class="btn" href="#menu">see the menu</a>
@@ -44,55 +54,68 @@
       </div>
     </section>
 
-    <!-- DEFINITION / BRAND -->
-    <section>
-      <div class="wrap">
-        <p class="eyebrow center reveal">what's in a name</p>
-        <div class="definition reveal">
-          <div>
-            <div class="word">san·no·ma·tea</div>
-            <div class="phon">/ ˈsä-nō-mä-tē /</div>
-          </div>
+    <!-- MARQUEE (hidden for now — remove the comment markers to bring it back)
+    <div class="h-marquee" aria-hidden="true">
+      <div class="h-marquee-track">
+        <span>ceremonial matcha</span><span>hojicha</span><span>loose-leaf tea</span><span>homemade bakes</span><span>yuzu tonic</span><span>black sesame</span>
+        <span>ceremonial matcha</span><span>hojicha</span><span>loose-leaf tea</span><span>homemade bakes</span><span>yuzu tonic</span><span>black sesame</span>
+      </div>
+    </div>
+    -->
+
+    <!-- BENTO: name + updates -->
+    <section class="h-section">
+      <div class="wrap h-bento">
+        <article class="h-tile h-tile-def reveal">
+          <p class="eyebrow">what's in a name</p>
+          <div class="word">san·no·ma·tea</div>
+          <div class="phon">/ ˈsä-nō-mä-tē / &nbsp;<span class="jp" lang="ja">三の間茶</span></div>
           <ol>
             <li><span class="pos">noun.</span> A small cafe where whisked matcha, loose-leaf tea, and homemade treats come together.</li>
             <li><span class="pos">noun.</span> The feeling of your first sip on a slow morning. [Replace with the real meaning behind the name.]</li>
           </ol>
-        </div>
-      </div>
-    </section>
+        </article>
 
-    <!-- STORE UPDATES -->
-    <section class="alt">
-      <div class="wrap center reveal">
-        <p class="eyebrow">store updates</p>
-        <h2>seasonal menu is here</h2>
-        <p class="lede">Our fall lineup just dropped — hojicha lattes, yuzu matcha tonic, and black sesame everything. Available while supplies last. [Edit this for news, closures, pop-ups or events.]</p>
+        <article class="h-tile h-tile-news reveal">
+          <p class="eyebrow">store updates</p>
+          <h2>seasonal menu is here</h2>
+          <p>Our fall lineup just dropped — hojicha lattes, yuzu matcha tonic, and black sesame everything. Available while supplies last. [Edit this for news, closures, pop-ups or events.]</p>
+          <a class="h-link" href="#menu">see what's new</a>
+        </article>
+
+        <figure class="h-tile h-tile-photo reveal">
+          <img src="images/web/dscf6887.jpg" alt="Iced matcha lattes ready to go" loading="lazy">
+        </figure>
       </div>
     </section>
 
     <!-- MENU -->
-    <section id="menu">
+    <section id="menu" class="h-section h-menu">
       <div class="wrap">
-        <p class="eyebrow reveal">the menu</p>
-        <h2 class="reveal">whisked, steeped &amp; baked</h2>
-        <p class="reveal" style="max-width:620px;color:var(--muted)">Oat, almond and soy milk available. Ask us about sweetness levels — we're happy to adjust.</p>
+        <header class="h-head reveal">
+          <div>
+            <p class="eyebrow">the menu</p>
+            <h2>whisked, steeped &amp; baked</h2>
+          </div>
+          <p class="h-head-note">Oat, almond and soy milk available. Ask us about sweetness levels — we're happy to adjust.</p>
+        </header>
 
-        <div class="menu-grid">
-          <div class="menu-cat reveal">
+        <div class="h-menu-grid">
+          <div class="h-menu-card reveal">
             <h3>matcha</h3>
             <div class="menu-item"><span class="name">classic matcha latte<span class="desc">ceremonial grade, whisked to order</span></span><span class="price">$5.50</span></div>
             <div class="menu-item"><span class="name">strawberry matcha<span class="desc">house strawberry purée, milk, matcha</span></span><span class="price">$6.50</span></div>
             <div class="menu-item"><span class="name">matcha cream top<span class="desc">sea salt cream foam</span></span><span class="price">$6.75</span></div>
             <div class="menu-item"><span class="name">usucha<span class="desc">traditional, just matcha &amp; water</span></span><span class="price">$4.50</span></div>
           </div>
-          <div class="menu-cat reveal">
+          <div class="h-menu-card reveal">
             <h3>tea &amp; more</h3>
             <div class="menu-item"><span class="name">hojicha latte<span class="desc">roasted green tea, toasty &amp; mellow</span></span><span class="price">$5.50</span></div>
             <div class="menu-item"><span class="name">brown sugar milk tea<span class="desc">with chewy boba</span></span><span class="price">$6.00</span></div>
             <div class="menu-item"><span class="name">yuzu tonic<span class="desc">sparkling, citrusy, refreshing</span></span><span class="price">$5.75</span></div>
             <div class="menu-item"><span class="name">loose-leaf pot<span class="desc">rotating sencha, oolong, genmaicha</span></span><span class="price">$4.00</span></div>
           </div>
-          <div class="menu-cat reveal">
+          <div class="h-menu-card reveal">
             <h3>bites</h3>
             <div class="menu-item"><span class="name">matcha basque cheesecake</span><span class="price">$6.00</span></div>
             <div class="menu-item"><span class="name">black sesame cookie</span><span class="price">$3.50</span></div>
@@ -104,78 +127,106 @@
     </section>
 
     <!-- ABOUT -->
-    <section id="about" class="alt">
-      <div class="wrap split">
-        <div class="ph reveal"><img src="images/web/dscf6786.jpg" alt="The founders smiling behind the matcha table" loading="lazy" style="object-position:40% center"></div>
-        <div class="reveal">
+    <section id="about" class="h-section h-about">
+      <div class="wrap h-about-grid">
+        <div class="h-about-media reveal">
+          <img class="h-about-main" src="images/web/dscf6786.jpg" alt="The founders smiling behind the matcha table" loading="lazy">
+          <img class="h-about-inset" src="images/web/dscf6812.jpg" alt="Matcha being sifted at the bar" loading="lazy">
+        </div>
+        <div class="h-about-copy reveal">
           <p class="eyebrow">about us</p>
           <h2>made with care, one bowl at a time</h2>
-          <p class="lede">Sanno Ma Tea was started by [Founder Names], lifelong tea lovers who wanted a place that felt like home.</p>
+          <p class="lede">San·No·Ma Tea was started by [Founder Names], lifelong tea lovers who wanted a place that felt like home.</p>
           <p>Established in [Year], we source our matcha from [region/farm] and make our syrups and bakes in-house. Our intention is simple: to be the in-between place — somewhere to work, catch up with friends, or just sit with a good cup. [Replace with your story.]</p>
-          <a class="btn btn-solid" href="#visit" style="margin-top:12px">come visit</a>
+          <ul class="h-stats">
+            <li><strong>ceremonial</strong><span>grade matcha</span></li>
+            <li><strong>in-house</strong><span>syrups &amp; bakes</span></li>
+            <li><strong>[Year]</strong><span>established</span></li>
+          </ul>
+          <a class="btn btn-solid" href="#visit">come visit</a>
         </div>
       </div>
     </section>
 
     <!-- OFFERINGS -->
-    <section>
+    <section class="h-section">
       <div class="wrap">
-        <p class="eyebrow reveal">more from us</p>
-        <h2 class="reveal">beyond the counter</h2>
-        <div class="cards">
-          <a class="card reveal" href="catering.html">
-            <div class="ph"><img src="images/web/dscf6823.jpg" alt="Matcha bar set-up with bowls, whisks and bottles" loading="lazy"></div>
-            <h3>matcha catering</h3>
-            <p>A full matcha bar for weddings, showers, and office events.</p>
-            <span class="more">learn more</span>
+        <header class="h-head reveal">
+          <div>
+            <p class="eyebrow">more from us</p>
+            <h2>beyond the counter</h2>
+          </div>
+        </header>
+        <div class="h-offers">
+          <a class="h-offer reveal" href="catering.html">
+            <img src="images/web/dscf6823.jpg" alt="Matcha bar set-up with bowls, whisks and bottles" loading="lazy">
+            <div class="h-offer-body">
+              <h3>matcha catering</h3>
+              <p>A full matcha bar for weddings, showers, and office events.</p>
+              <span class="h-link">learn more</span>
+            </div>
           </a>
-          <a class="card reveal" href="#visit">
-            <div class="ph"><img src="images/web/dscf6812.jpg" alt="Close-up of matcha being whisked" loading="lazy"></div>
-            <h3>workshops</h3>
-            <p>Learn to whisk your own bowl in our small-group sessions.</p>
-            <span class="more">ask about dates</span>
+          <a class="h-offer reveal" href="#visit">
+            <img src="images/web/dscf6888.jpg" alt="A freshly whisked matcha being served at the bar" loading="lazy">
+            <div class="h-offer-body">
+              <h3>workshops</h3>
+              <p>Learn to whisk your own bowl in our small-group sessions.</p>
+              <span class="h-link">ask about dates</span>
+            </div>
           </a>
-          <a class="card reveal" href="hiring.html">
-            <div class="ph"><img src="images/web/dscf6884.jpg" alt="The Sanno Ma Tea team at their booth" loading="lazy"></div>
-            <h3>join the team</h3>
-            <p>We're always looking for friendly faces behind the bar.</p>
-            <span class="more">see openings</span>
+          <a class="h-offer reveal" href="hiring.html">
+            <img src="images/web/dscf6884.jpg" alt="The San·No·Ma Tea team at their booth" loading="lazy">
+            <div class="h-offer-body">
+              <h3>join the team</h3>
+              <p>We're always looking for friendly faces behind the bar.</p>
+              <span class="h-link">see openings</span>
+            </div>
           </a>
         </div>
       </div>
     </section>
 
     <!-- GALLERY -->
-    <section class="alt">
-      <div class="wrap center">
-        <p class="eyebrow reveal">the space</p>
-        <h2 class="reveal">@sannomatea</h2>
-        <div class="gallery reveal">
-          <div class="ph"><img src="images/web/dscf6819.jpg" alt="A guest stirring a fresh matcha" loading="lazy"></div>
-          <div class="ph"><img src="images/web/dscf6822.jpg" alt="Matcha in a paper cup, close-up" loading="lazy"></div>
-          <div class="ph"><img src="images/web/dscf6817.jpg" alt="Pouring matcha at the bar" loading="lazy"></div>
-          <div class="ph"><img src="images/web/dscf6787.jpg" alt="Matcha bottles and kettle on the table" loading="lazy"></div>
-          <div class="ph"><img src="images/web/dscf6880.jpg" alt="Serving drinks at the pop-up" loading="lazy"></div>
-          <div class="ph"><img src="images/web/dscf6887.jpg" alt="Iced matcha lattes ready to go" loading="lazy"></div>
-          <div class="ph"><img src="images/web/dscf6810.jpg" alt="Fresh whisked matcha and milk cups" loading="lazy"></div>
-          <div class="ph"><img src="images/web/dscf6877.jpg" alt="A line of guests at the pop-up" loading="lazy"></div>
+    <section class="h-section h-gallery-wrap">
+      <div class="wrap">
+        <header class="h-head reveal">
+          <div>
+            <p class="eyebrow">the space</p>
+            <h2>@sannomatea</h2>
+          </div>
+          <a class="btn btn-solid" href="https://instagram.com/" target="_blank" rel="noopener">follow on instagram</a>
+        </header>
+        <div class="h-gallery reveal">
+          <figure class="g-tall"><img src="images/web/dscf6819.jpg" alt="A guest stirring a fresh matcha" loading="lazy"></figure>
+          <figure><img src="images/web/dscf6822.jpg" alt="Matcha in a paper cup, close-up" loading="lazy"></figure>
+          <figure class="g-wide"><img src="images/web/dscf6817.jpg" alt="Pouring matcha at the bar" loading="lazy"></figure>
+          <figure><img src="images/web/dscf6787.jpg" alt="Matcha bottles and kettle on the table" loading="lazy"></figure>
+          <figure class="g-tall"><img src="images/web/dscf6880.jpg" alt="Serving drinks at the pop-up" loading="lazy"></figure>
+          <figure><img src="images/web/dscf6810.jpg" alt="Fresh whisked matcha and milk cups" loading="lazy"></figure>
+          <figure class="g-wide"><img src="images/web/dscf6877.jpg" alt="A line of guests at the pop-up" loading="lazy"></figure>
+          <figure><img src="images/web/dscf6809.jpg" alt="A row of iced milk cups waiting for matcha" loading="lazy"></figure>
         </div>
-        <a class="btn" style="margin-top:40px" href="https://instagram.com/" target="_blank" rel="noopener">follow on instagram</a>
       </div>
     </section>
 
     <!-- NEWSLETTER -->
-    <section class="newsletter">
-      <div class="wrap center" data-form-wrap>
-        <p class="eyebrow" style="color:var(--matcha)">stay in the loop</p>
-        <h2>subscribe</h2>
-        <p style="opacity:.8">Sign up with your email to hear about new drinks, events, and updates.</p>
-        <form data-demo>
-          <input type="email" required placeholder="email address" aria-label="Email address">
-          <button class="btn" type="submit">sign up</button>
-        </form>
-        <p class="thanks">thank you! talk soon 🍵</p>
-        <p class="small">We respect your privacy.</p>
+    <section class="h-section h-news-wrap">
+      <div class="wrap">
+        <div class="h-news" data-form-wrap>
+          <div>
+            <p class="eyebrow">stay in the loop</p>
+            <h2>subscribe</h2>
+            <p>Sign up with your email to hear about new drinks, events, and updates.</p>
+          </div>
+          <div>
+            <form data-demo>
+              <input type="email" required placeholder="email address" aria-label="Email address">
+              <button class="btn btn-matcha" type="submit">sign up</button>
+            </form>
+            <p class="thanks">thank you! talk soon 🍵</p>
+            <p class="small">We respect your privacy.</p>
+          </div>
+        </div>
       </div>
     </section>
   </main>
@@ -184,7 +235,9 @@
     <div class="wrap">
       <div class="footer-grid">
         <div>
-          <p class="footer-logo">sanno<span>·</span>ma<span>·</span>tea</p>
+          <img class="footer-mark" src="images/brand/logo-mark-light.png" alt="San·No·Ma Tea logo" width="120" height="120" loading="lazy">
+          <p class="footer-logo">San<span>·</span>No<span>·</span>Ma Tea</p>
+          <p class="footer-jp jp" lang="ja">三の間茶</p>
         </div>
         <div>
           <h4>visit</h4>
@@ -204,7 +257,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© <span data-year></span> Sanno Ma Tea</span>
+        <span>© <span data-year></span> San·No·Ma Tea</span>
         <span>made with matcha</span>
       </div>
     </div>

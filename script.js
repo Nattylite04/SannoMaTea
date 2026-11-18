@@ -10,6 +10,24 @@ if (toggle) {
   );
 }
 
+// Day / night switch (remembered across pages)
+const themeBtn = document.querySelector(".theme-toggle");
+const syncThemeLabel = () => {
+  const dark = document.documentElement.dataset.theme === "dark";
+  themeBtn.setAttribute("aria-label", dark ? "Switch to day mode" : "Switch to night mode");
+  themeBtn.setAttribute("aria-pressed", dark);
+};
+if (themeBtn) {
+  syncThemeLabel();
+  themeBtn.addEventListener("click", () => {
+    const dark = document.documentElement.dataset.theme !== "dark";
+    if (dark) document.documentElement.dataset.theme = "dark";
+    else delete document.documentElement.dataset.theme;
+    try { localStorage.setItem("theme", dark ? "dark" : "light"); } catch (e) {}
+    syncThemeLabel();
+  });
+}
+
 // Fade sections in as they scroll into view
 const io = new IntersectionObserver(
   (entries) =>
