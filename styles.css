@@ -329,3 +329,7 @@ h3 {
   .reveal { opacity: 1; transform: none; transition: none; }
   html { scroll-behavior: auto; }
 }
+
+/* ---------- Photo hero ---------- */
+.hero-photo { background-color: var(--ink); background-size: cover; background-position: center; }
+.ph img { border-radius: inherit; }

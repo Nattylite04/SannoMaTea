@@ -1,0 +1,6 @@
+# Original full-size photos stay local; the site uses images/web/
+images/*
+!images/web/
+!images/.gitkeep
+*:Zone.Identifier
+*.zip
