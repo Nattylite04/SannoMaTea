@@ -12,13 +12,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&text=%E4%B8%89%E3%81%AE%E9%96%93%E8%8C%B6&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="images/brand/favicon.png">
   <link rel="apple-touch-icon" href="images/brand/apple-touch-icon.png">
-  <link rel="stylesheet" href="styles.css?v=9">
+  <link rel="stylesheet" href="styles.css?v=12">
   <script>try{if(localStorage.getItem("theme")==="dark")document.documentElement.dataset.theme="dark"}catch(e){}</script>
 </head>
 <body class="home">
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <div class="announce">now open! come say hi — <a href="#visit">hours &amp; location</a></div>
+  <div class="announce">now popping up around Dallas! <a href="https://instagram.com/sannomatea" target="_blank" rel="noopener">follow @sannomatea</a> for dates</div>
 
   <header class="site-header">
     <div class="wrap">
@@ -26,6 +26,7 @@
       <nav class="nav" aria-label="Main">
         <a href="#menu">menu</a>
         <a href="#about">about</a>
+        <a href="#newsletter">newsletter</a>
         <a href="#visit">visit</a>
       </nav>
       <button class="theme-toggle" type="button" aria-label="Switch to night mode" title="Day / night">
@@ -44,7 +45,7 @@
       <div>
         <h1>San·No·<em>Ma</em> Tea</h1>
         <p class="hero-jp jp" lang="ja">三の間茶</p>
-        <p>Slow down, sip something green. A cozy corner for matcha, tea, and good company in the heart of [Your City].</p>
+        <p>Your in-between place for matcha and Japanese tea.</p>
         <div class="btn-row">
           <a class="btn" href="#menu">see the menu</a>
           <a class="btn" href="#visit">find us</a>
@@ -69,16 +70,16 @@
           <div class="word">san·no·ma·tea</div>
           <div class="phon">/ ˈsä-nō-mä-tē / &nbsp;<span class="jp" lang="ja">三の間茶</span></div>
           <ol>
-            <li><span class="pos">noun.</span> A small cafe where whisked matcha, loose-leaf tea, and homemade treats come together.</li>
+            <li><span class="pos">noun.</span> A pop-up where hand-whisked matcha, Japanese tea, and homemade treats come together.</li>
             <li><span class="pos">noun.</span> The feeling of your first sip on a slow morning. [Replace with the real meaning behind the name.]</li>
           </ol>
         </article>
 
         <article class="h-tile h-tile-news reveal">
           <p class="eyebrow">store updates</p>
-          <h2>seasonal menu is here</h2>
-          <p>Our fall lineup just dropped — hojicha lattes, yuzu matcha tonic, and black sesame everything. Available while supplies last. [Edit this for news, closures, pop-ups or events.]</p>
-          <a class="h-link" href="#menu">see what's new</a>
+          <h2>we're popping up</h2>
+          <p>San·No·Ma Tea just launched! Find us at pop-ups around Dallas with hand-whisked Uji matcha, Cloud Matcha with your pick of foam, cold-brew sencha and gyokuro, plus matcha cookies and cheesecake.</p>
+          <a class="h-link" href="#menu">see the menu</a>
         </article>
 
         <figure class="h-tile h-tile-photo reveal">
@@ -135,7 +136,7 @@
         <div class="h-about-copy reveal">
           <p class="eyebrow">about us</p>
           <h2>made with care, one bowl at a time</h2>
-          <p class="lede">San·No·Ma Tea was started by [Founder Names], lifelong tea lovers who wanted a place that felt like home.</p>
+          <p class="lede">San·No·Ma Tea was started by David, lifelong tea lovers who wanted a place that felt like home.</p>
           <p>Established in [Year], we source our matcha from [region/farm] and make our syrups and bakes in-house. Our intention is simple: to be the in-between place — somewhere to work, catch up with friends, or just sit with a good cup. [Replace with your story.]</p>
           <ul class="h-stats">
             <li><strong>ceremonial</strong><span>grade matcha</span></li>
@@ -254,23 +255,17 @@
     </section>
 
     <!-- NEWSLETTER -->
-    <section class="h-section h-news-wrap">
-      <div class="wrap">
-        <div class="h-news" data-form-wrap>
-          <div>
-            <p class="eyebrow">stay in the loop</p>
-            <h2>subscribe</h2>
-            <p>Sign up with your email to hear about new drinks, events, and updates.</p>
-          </div>
-          <div>
-            <form data-demo>
-              <input type="email" required placeholder="email address" aria-label="Email address">
-              <button class="btn btn-matcha" type="submit">sign up</button>
-            </form>
-            <p class="thanks">thank you! talk soon 🍵</p>
-            <p class="small">We respect your privacy.</p>
-          </div>
-        </div>
+    <section id="newsletter" class="news-band" data-form-wrap>
+      <div class="news-inner">
+        <p class="news-eyebrow">stay in the loop</p>
+        <h2>Be the first to know about San·No·<em>Ma</em> Tea.</h2>
+        <p class="news-sub">Get pop-up dates, new drinks, and updates.</p>
+        <form class="news-form" data-demo>
+          <input type="email" required placeholder="Your email address" aria-label="Email address">
+          <button type="submit">Sign up</button>
+        </form>
+        <p class="thanks">Thank you! Talk soon 🍵</p>
+        <p class="news-small">We respect your privacy.</p>
       </div>
     </section>
   </main>
