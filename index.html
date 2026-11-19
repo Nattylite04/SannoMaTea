@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&text=%E4%B8%89%E3%81%AE%E9%96%93%E8%8C%B6&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="images/brand/favicon.png">
   <link rel="apple-touch-icon" href="images/brand/apple-touch-icon.png">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=9">
   <script>try{if(localStorage.getItem("theme")==="dark")document.documentElement.dataset.theme="dark"}catch(e){}</script>
 </head>
 <body class="home">
@@ -26,8 +26,6 @@
       <nav class="nav" aria-label="Main">
         <a href="#menu">menu</a>
         <a href="#about">about</a>
-        <a href="catering.html">catering</a>
-        <a href="hiring.html">join the team</a>
         <a href="#visit">visit</a>
       </nav>
       <button class="theme-toggle" type="button" aria-label="Switch to night mode" title="Day / night">
@@ -92,35 +90,36 @@
     <!-- MENU -->
     <section id="menu" class="h-section h-menu">
       <div class="wrap">
-        <header class="h-head reveal">
-          <div>
-            <p class="eyebrow">the menu</p>
-            <h2>whisked, steeped &amp; baked</h2>
+        <header class="menu-lockup reveal">
+          <div class="menu-lockup-row">
+            <h2>Menu</h2>
+            <p class="menu-lockup-brand">San·No·Ma Tea<span class="jp" lang="ja">三の間茶</span></p>
           </div>
-          <p class="h-head-note">Oat, almond and soy milk available. Ask us about sweetness levels — we're happy to adjust.</p>
+          <p class="h-head-note">Drinks come 100%, 50% or 0% sweet, with whole or oat milk (oat +$1.00).</p>
         </header>
 
         <div class="h-menu-grid">
           <div class="h-menu-card reveal">
-            <h3>matcha</h3>
-            <div class="menu-item"><span class="name">classic matcha latte<span class="desc">ceremonial grade, whisked to order</span></span><span class="price">$5.50</span></div>
-            <div class="menu-item"><span class="name">strawberry matcha<span class="desc">house strawberry purée, milk, matcha</span></span><span class="price">$6.50</span></div>
-            <div class="menu-item"><span class="name">matcha cream top<span class="desc">sea salt cream foam</span></span><span class="price">$6.75</span></div>
-            <div class="menu-item"><span class="name">usucha<span class="desc">traditional, just matcha &amp; water</span></span><span class="price">$4.50</span></div>
+            <h3>Matcha</h3>
+            <div class="menu-item"><span class="name">Classic Matcha Latte<span class="desc">Refreshing and balanced Uji matcha with mellow umami and gentle sweetness</span></span><span class="price">$6.50</span></div>
+            <div class="menu-item"><span class="name">Cloud Matcha<span class="desc">Pick one foam flavor: Strawberry, Matcha (+$0.50), Black Sesame or Genmaicha · contains dairy</span></span><span class="price">$7.50</span></div>
+            <div class="menu-item"><span class="name">Usucha<span class="desc">A traditional thin Uji matcha with vegetal notes, gentle umami and a balanced flavor profile · served hot · 0% sweet recommended</span></span><span class="price">$5.50</span></div>
           </div>
           <div class="h-menu-card reveal">
-            <h3>tea &amp; more</h3>
-            <div class="menu-item"><span class="name">hojicha latte<span class="desc">roasted green tea, toasty &amp; mellow</span></span><span class="price">$5.50</span></div>
-            <div class="menu-item"><span class="name">brown sugar milk tea<span class="desc">with chewy boba</span></span><span class="price">$6.00</span></div>
-            <div class="menu-item"><span class="name">yuzu tonic<span class="desc">sparkling, citrusy, refreshing</span></span><span class="price">$5.75</span></div>
-            <div class="menu-item"><span class="name">loose-leaf pot<span class="desc">rotating sencha, oolong, genmaicha</span></span><span class="price">$4.00</span></div>
+            <h3>Cold Brew Tea</h3>
+            <div class="menu-item"><span class="name">Cold Brew Sencha<span class="desc">Signature Japanese Green Tea from Uji, with deep umami, refreshing sweetness and minimal bitterness · 0% sweet recommended</span></span><span class="price">$4.50</span></div>
+            <div class="menu-item"><span class="name">Cold Brew Gyokuro<span class="desc">“Jade Dew” tea, the most prized tea from Uji, known for its intense and profound umami · 0% sweet recommended</span></span><span class="price">$5.50</span></div>
           </div>
           <div class="h-menu-card reveal">
-            <h3>bites</h3>
-            <div class="menu-item"><span class="name">matcha basque cheesecake</span><span class="price">$6.00</span></div>
-            <div class="menu-item"><span class="name">black sesame cookie</span><span class="price">$3.50</span></div>
-            <div class="menu-item"><span class="name">mochi trio<span class="desc">rotating flavors</span></span><span class="price">$5.00</span></div>
-            <div class="menu-item"><span class="name">onigiri<span class="desc">ask about today's filling</span></span><span class="price">$4.50</span></div>
+            <h3>Desserts</h3>
+            <div class="dessert">
+              <img src="images/brand/matcha-cookies.png" alt="Illustration of two matcha sandwich cookies" width="423" height="265" loading="lazy">
+              <div class="menu-item"><span class="name">Matcha Cookies (2)</span><span class="price">$4.50</span></div>
+            </div>
+            <div class="dessert">
+              <img src="images/brand/matcha-cheesecake.png" alt="Illustration of a slice of matcha cheesecake" width="359" height="311" loading="lazy">
+              <div class="menu-item"><span class="name">Matcha Cheesecake</span><span class="price">$7.50</span></div>
+            </div>
           </div>
         </div>
       </div>
@@ -148,7 +147,7 @@
       </div>
     </section>
 
-    <!-- OFFERINGS -->
+    <!-- OFFERINGS (hidden for now — catering & hiring aren't available yet; restore catering.html/hiring.html from git when ready)
     <section class="h-section">
       <div class="wrap">
         <header class="h-head reveal">
@@ -185,6 +184,7 @@
         </div>
       </div>
     </section>
+    -->
 
     <!-- GALLERY -->
     <section class="h-section h-gallery-wrap">
@@ -194,9 +194,9 @@
             <p class="eyebrow">the space</p>
             <h2>@sannomatea</h2>
           </div>
-          <a class="btn btn-solid" href="https://instagram.com/" target="_blank" rel="noopener">follow on instagram</a>
+          <a class="btn btn-solid" href="https://instagram.com/sannomatea" target="_blank" rel="noopener">follow on instagram</a>
         </header>
-        <div class="h-gallery reveal">
+        <div class="h-gallery reveal" id="album">
           <figure class="g-tall"><img src="images/web/dscf6819.jpg" alt="A guest stirring a fresh matcha" loading="lazy"></figure>
           <figure><img src="images/web/dscf6822.jpg" alt="Matcha in a paper cup, close-up" loading="lazy"></figure>
           <figure class="g-wide"><img src="images/web/dscf6817.jpg" alt="Pouring matcha at the bar" loading="lazy"></figure>
@@ -205,6 +205,50 @@
           <figure><img src="images/web/dscf6810.jpg" alt="Fresh whisked matcha and milk cups" loading="lazy"></figure>
           <figure class="g-wide"><img src="images/web/dscf6877.jpg" alt="A line of guests at the pop-up" loading="lazy"></figure>
           <figure><img src="images/web/dscf6809.jpg" alt="A row of iced milk cups waiting for matcha" loading="lazy"></figure>
+          <figure class="g-more g-tall" data-batch="1"><img src="images/web/album/whisking-portrait.jpg" data-full="images/web/whisking-portrait.jpg" alt="Whisking matcha by hand at the pop-up" loading="lazy" width="600" height="800"></figure>
+          <figure class="g-more g-tall" data-batch="1"><img src="images/web/album/img_6119.jpg" data-full="images/web/img_6119.jpg" alt="Moment from a San·No·Ma Tea pop-up" loading="lazy" width="600" height="800"></figure>
+          <figure class="g-more" data-batch="1"><img src="images/web/album/dscf6784.jpg" data-full="images/web/dscf6784.jpg" alt="Moment from a San·No·Ma Tea pop-up" loading="lazy" width="800" height="534"></figure>
+          <figure class="g-more" data-batch="1"><img src="images/web/album/dscf6785.jpg" data-full="images/web/dscf6785.jpg" alt="Moment from a San·No·Ma Tea pop-up" loading="lazy" width="800" height="534"></figure>
+          <figure class="g-more" data-batch="1"><img src="images/web/album/dscf6786.jpg" data-full="images/web/dscf6786.jpg" alt="Moment from a San·No·Ma Tea pop-up" loading="lazy" width="800" height="534"></figure>
+          <figure class="g-more" data-batch="1"><img src="images/web/album/dscf6788.jpg" data-full="images/web/dscf6788.jpg" alt="Moment from a San·No·Ma Tea pop-up" loading="lazy" width="800" height="534"></figure>
+          <figure class="g-more" data-batch="1"><img src="images/web/album/dscf6790.jpg" data-full="images/web/dscf6790.jpg" alt="Moment from a San·No·Ma Tea pop-up" loading="lazy" width="800" height="534"></figure>
+          <figure class="g-more" data-batch="1"><img src="images/web/album/dscf6793.jpg" data-full="images/web/dscf6793.jpg" alt="Moment from a San·No·Ma Tea pop-up" loading="lazy" width="800" height="534"></figure>
+          <figure class="g-more" data-batch="1"><img src="images/web/album/dscf6795.jpg" data-full="images/web/dscf6795.jpg" alt="Moment from a San·No·Ma Tea pop-up" loading="lazy" width="800" height="534"></figure>
+          <figure class="g-more" data-batch="1"><img src="images/web/album/dscf6796.jpg" data-full="images/web/dscf6796.jpg" alt="Moment from a San·No·Ma Tea pop-up" loading="lazy" width="800" height="534"></figure>
+          <figure class="g-more" data-batch="2"><img src="images/web/album/dscf6797.jpg" data-full="images/web/dscf6797.jpg" alt="Moment from a San·No·Ma Tea pop-up" loading="lazy" width="800" height="534"></figure>
+          <figure class="g-more" data-batch="2"><img src="images/web/album/dscf6798.jpg" data-full="images/web/dscf6798.jpg" alt="Moment from a San·No·Ma Tea pop-up" loading="lazy" width="800" height="534"></figure>
+          <figure class="g-more g-wide" data-batch="2"><img src="images/web/album/dscf6799.jpg" data-full="images/web/dscf6799.jpg" alt="Moment from a San·No·Ma Tea pop-up" loading="lazy" width="800" height="534"></figure>
+          <figure class="g-more" data-batch="2"><img src="images/web/album/dscf6800.jpg" data-full="images/web/dscf6800.jpg" alt="Moment from a San·No·Ma Tea pop-up" loading="lazy" width="800" height="534"></figure>
+          <figure class="g-more" data-batch="2"><img src="images/web/album/dscf6801.jpg" data-full="images/web/dscf6801.jpg" alt="Moment from a San·No·Ma Tea pop-up" loading="lazy" width="800" height="534"></figure>
+          <figure class="g-more" data-batch="2"><img src="images/web/album/dscf6802.jpg" data-full="images/web/dscf6802.jpg" alt="Moment from a San·No·Ma Tea pop-up" loading="lazy" width="800" height="534"></figure>
+          <figure class="g-more" data-batch="2"><img src="images/web/album/dscf6807.jpg" data-full="images/web/dscf6807.jpg" alt="Moment from a San·No·Ma Tea pop-up" loading="lazy" width="800" height="534"></figure>
+          <figure class="g-more g-wide" data-batch="2"><img src="images/web/album/dscf6808.jpg" data-full="images/web/dscf6808.jpg" alt="Moment from a San·No·Ma Tea pop-up" loading="lazy" width="800" height="534"></figure>
+          <figure class="g-more" data-batch="2"><img src="images/web/album/dscf6811.jpg" data-full="images/web/dscf6811.jpg" alt="Moment from a San·No·Ma Tea pop-up" loading="lazy" width="800" height="534"></figure>
+          <figure class="g-more" data-batch="2"><img src="images/web/album/dscf6812.jpg" data-full="images/web/dscf6812.jpg" alt="Moment from a San·No·Ma Tea pop-up" loading="lazy" width="800" height="534"></figure>
+          <figure class="g-more" data-batch="3"><img src="images/web/album/dscf6813.jpg" data-full="images/web/dscf6813.jpg" alt="Moment from a San·No·Ma Tea pop-up" loading="lazy" width="800" height="534"></figure>
+          <figure class="g-more" data-batch="3"><img src="images/web/album/dscf6814.jpg" data-full="images/web/dscf6814.jpg" alt="Moment from a San·No·Ma Tea pop-up" loading="lazy" width="800" height="534"></figure>
+          <figure class="g-more g-wide" data-batch="3"><img src="images/web/album/dscf6815.jpg" data-full="images/web/dscf6815.jpg" alt="Moment from a San·No·Ma Tea pop-up" loading="lazy" width="800" height="534"></figure>
+          <figure class="g-more" data-batch="3"><img src="images/web/album/dscf6816.jpg" data-full="images/web/dscf6816.jpg" alt="Moment from a San·No·Ma Tea pop-up" loading="lazy" width="800" height="534"></figure>
+          <figure class="g-more" data-batch="3"><img src="images/web/album/dscf6818.jpg" data-full="images/web/dscf6818.jpg" alt="Moment from a San·No·Ma Tea pop-up" loading="lazy" width="800" height="534"></figure>
+          <figure class="g-more" data-batch="3"><img src="images/web/album/dscf6820.jpg" data-full="images/web/dscf6820.jpg" alt="Moment from a San·No·Ma Tea pop-up" loading="lazy" width="800" height="534"></figure>
+          <figure class="g-more" data-batch="3"><img src="images/web/album/dscf6821.jpg" data-full="images/web/dscf6821.jpg" alt="Moment from a San·No·Ma Tea pop-up" loading="lazy" width="800" height="534"></figure>
+          <figure class="g-more g-wide" data-batch="3"><img src="images/web/album/dscf6823.jpg" data-full="images/web/dscf6823.jpg" alt="Moment from a San·No·Ma Tea pop-up" loading="lazy" width="800" height="534"></figure>
+          <figure class="g-more" data-batch="3"><img src="images/web/album/dscf6824.jpg" data-full="images/web/dscf6824.jpg" alt="Moment from a San·No·Ma Tea pop-up" loading="lazy" width="800" height="534"></figure>
+          <figure class="g-more" data-batch="3"><img src="images/web/album/dscf6878.jpg" data-full="images/web/dscf6878.jpg" alt="Moment from a San·No·Ma Tea pop-up" loading="lazy" width="800" height="534"></figure>
+          <figure class="g-more" data-batch="4"><img src="images/web/album/dscf6879.jpg" data-full="images/web/dscf6879.jpg" alt="Moment from a San·No·Ma Tea pop-up" loading="lazy" width="800" height="534"></figure>
+          <figure class="g-more" data-batch="4"><img src="images/web/album/dscf6881.jpg" data-full="images/web/dscf6881.jpg" alt="Moment from a San·No·Ma Tea pop-up" loading="lazy" width="800" height="534"></figure>
+          <figure class="g-more g-wide" data-batch="4"><img src="images/web/album/dscf6882.jpg" data-full="images/web/dscf6882.jpg" alt="Moment from a San·No·Ma Tea pop-up" loading="lazy" width="800" height="534"></figure>
+          <figure class="g-more" data-batch="4"><img src="images/web/album/dscf6883.jpg" data-full="images/web/dscf6883.jpg" alt="Moment from a San·No·Ma Tea pop-up" loading="lazy" width="800" height="534"></figure>
+          <figure class="g-more" data-batch="4"><img src="images/web/album/dscf6884.jpg" data-full="images/web/dscf6884.jpg" alt="Moment from a San·No·Ma Tea pop-up" loading="lazy" width="800" height="534"></figure>
+          <figure class="g-more" data-batch="4"><img src="images/web/album/dscf6885.jpg" data-full="images/web/dscf6885.jpg" alt="Moment from a San·No·Ma Tea pop-up" loading="lazy" width="800" height="534"></figure>
+          <figure class="g-more" data-batch="4"><img src="images/web/album/dscf6886.jpg" data-full="images/web/dscf6886.jpg" alt="Moment from a San·No·Ma Tea pop-up" loading="lazy" width="800" height="534"></figure>
+          <figure class="g-more" data-batch="4"><img src="images/web/album/dscf6887.jpg" data-full="images/web/dscf6887.jpg" alt="Moment from a San·No·Ma Tea pop-up" loading="lazy" width="800" height="534"></figure>
+          <figure class="g-more" data-batch="4"><img src="images/web/album/dscf6888.jpg" data-full="images/web/dscf6888.jpg" alt="Moment from a San·No·Ma Tea pop-up" loading="lazy" width="800" height="534"></figure>
+          <figure class="g-more" data-batch="4"><img src="images/web/album/dscf6889.jpg" data-full="images/web/dscf6889.jpg" alt="Moment from a San·No·Ma Tea pop-up" loading="lazy" width="800" height="534"></figure>
+          <figure class="g-more" data-batch="4"><img src="images/web/album/dscf6789.jpg" data-full="images/web/dscf6789.jpg" alt="Moment from a San·No·Ma Tea pop-up" loading="lazy" width="800" height="534"></figure>
+        </div>
+        <div class="h-album-more">
+          <button class="btn btn-ghost album-toggle" type="button" aria-controls="album">view more photos</button>
         </div>
       </div>
     </section>
@@ -231,6 +275,15 @@
     </section>
   </main>
 
+  <!-- Photo viewer (click any album photo) -->
+  <dialog class="lightbox" aria-label="Photo viewer">
+    <img class="lb-img" alt="">
+    <button class="lb-btn lb-close" type="button" aria-label="Close">&times;</button>
+    <button class="lb-btn lb-prev" type="button" aria-label="Previous photo">&#8249;</button>
+    <button class="lb-btn lb-next" type="button" aria-label="Next photo">&#8250;</button>
+    <p class="lb-count" aria-live="polite"></p>
+  </dialog>
+
   <footer class="site-footer" id="visit">
     <div class="wrap">
       <div class="footer-grid">
@@ -241,19 +294,17 @@
         </div>
         <div>
           <h4>visit</h4>
-          <p>123 Street Name</p>
-          <p>City, ST 00000</p>
+          <p>TBD</p>
         </div>
         <div>
           <h4>hours</h4>
-          <p>Mon–Fri · 8am–6pm</p>
-          <p>Sat–Sun · 9am–7pm</p>
+          <p>TBD</p>
         </div>
         <div>
           <h4>contact</h4>
           <a href="mailto:hello@sannomatea.com">hello@sannomatea.com</a>
           <a href="tel:+10000000000">(000) 000-0000</a>
-          <a href="https://instagram.com/" target="_blank" rel="noopener">instagram</a>
+          <a href="https://instagram.com/sannomatea" target="_blank" rel="noopener">@sannomatea</a>
         </div>
       </div>
       <div class="footer-bottom">
@@ -263,6 +314,6 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=2"></script>
 </body>
 </html>
